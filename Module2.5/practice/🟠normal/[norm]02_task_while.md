@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+stop = "stop"
+number = ""
+count = 0
+while stop != number:
+        number = input("Number: ")
+        if number != "stop":
+            if int(number) > 0:
+                count += 1
+
+print("Положительных чисел:", count)
 ```
 
 ---
