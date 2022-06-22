@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+m = int(input("month: "))
+if 3 <= m <= 5:
+    print("Spring")
+if 6 <= m <= 8:
+    print("Summer")
+if 9 <= m <= 11:
+    print("Autumn")
+if m == 1 or m == 2 or m == 12:
+    print("Winter")
 ```
 
 ---
