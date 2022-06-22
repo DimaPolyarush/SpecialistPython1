@@ -7,4 +7,14 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+n = int(input("кол-во коров: "))
+if n >= 11 and n <= 14:
+    print(n, 'коров')
+else:
+    rem = n % 10
+    if rem == 0 or (rem >= 5 and rem <= 9):
+        print(n, 'коров')
+    if rem == 1:
+        print(n, 'корова')
+    if rem >= 2 and rem <= 4:
+        print(n, 'коровы')
