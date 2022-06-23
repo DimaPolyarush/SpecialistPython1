@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = input("text= ")
+if text[0:3] == str("id:") and text[3: ].isdigit():
+    print("yes")
+else:
+    print("no")
 ```
 
 ---
