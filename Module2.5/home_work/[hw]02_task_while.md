@@ -21,5 +21,17 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+count = 0
+while a <= b:
+    if a % 5 == 0:
+        count += 1
+        print(a)
+    a += 1
+while b <= a:
+    if b % 5 == 0:
+        count += 1
+        print(b)
+    b += 1
+
+print("Количество чисел кратных пяти =", count)
 ```
