@@ -36,6 +36,11 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Цена товара: "))
+n = int(input(("Кол-во товара: ")))
+count = 0
+while count < n:
+    count += 1
+    print(count, cost * count, "рублей")
 ```
 
