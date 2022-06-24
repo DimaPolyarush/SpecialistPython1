@@ -2,5 +2,9 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
-
-# TODO: your code here
+count = -1
+number = 1
+while count < len(fruits) - 1:
+    print(number, fruits[1 + count])
+    count += 1
+    number += 1
