@@ -5,3 +5,12 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+names = [2, -5, 8, 9, -25, 25, 4]
+new_list = []
+i = 0
+
+while i < len(names):
+    if names[i] > 0 and (names[i] ** 0.5) % 1 == 0:
+        new_list.append(int(names[i] ** 0.5))
+    i += 1
+print(new_list)
