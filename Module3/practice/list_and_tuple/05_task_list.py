@@ -5,7 +5,17 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+count = -1
+number = 1
+max_len = 0
+for fruit in fruits:
+    if len(fruit) > max_len:
+        max_len = len(fruit)
+while count < len(fruits) - 1:
+    fru = fruits[1 + count]
+    print(f"{number}. {fru:>{max_len}}")
+    count += 1
+    number += 1
 
 # Пример вывода:
 # 1. яблоко
