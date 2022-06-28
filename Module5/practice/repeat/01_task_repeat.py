@@ -2,6 +2,17 @@
 # произвольными целыми числами в заданном диапазоне.
 # , где size - размер генерируемого списка c элементами в диапазоне от of до to.
 
+import random
+
+
 def gen_list(size, of, to):
-    pass
+    res = []
+    for _ in range(size):
+        res.append(random.randint(of, to))
+    return res
+
+
+my_tuple = 5, 7, -4, 10, 8
+
+print(*my_tuple)
 
