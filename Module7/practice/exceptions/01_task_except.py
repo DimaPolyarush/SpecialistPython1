@@ -4,3 +4,18 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+
+import math
+print("введите данные: ")
+while True:
+    try:
+        nxm = input()
+        index_x = nxm.find("x")
+        n = int(nxm[0:index_x])
+        m = int(nxm[index_x + 1:])
+        break
+    except ValueError:
+        print("введены некорректные данные, повторите ввод: ")
+
+s = n / m
+print(math.floor(s))
